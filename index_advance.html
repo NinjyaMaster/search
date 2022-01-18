@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <style type="text/css">
+        *{
+            font-family: Roboto,arial,sans-serif;
+        }
+        .top{
+            
+        }
+        .top_logo{
+            margin: 0px;
+            /*border: 1px solid #333;*/
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .top_nav{
+            margin: 0px;
+            /*border: 1px solid #333;*/
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+        .qBox{
+            width:400px;
+            height: 40px;
+            padding-left: 30px;
+            margin: 20px;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            border-radius:30px;
+            border: 2px solid #eee;
+            outline: 0;
+
+        }
+        .qButton{
+            width:200px;
+            padding:5px;
+            height: 30px;
+            margin: 20px;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            border-radius:30px;
+            border: 0;
+        }
+        .logo{
+            align-content: center;
+        }
+        /* unvisited link */
+        a{
+            margin: 10px;
+            align-content: center;
+        }
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* visited link */
+        a:visited {
+          color: black;
+          text-decoration: none;
+        }
+
+        /* mouse over link */
+        a:hover {
+
+          color: hotpink;
+          text-decoration: none;
+        }
+
+        /* selected link */
+        a:active {
+          color: black;
+          text-decoration: none;
+        }
+        ul {
+            list-style-type: none;
+             margin: 0;
+             padding: 0;
+        }
+        .test {
+            width: 500px;
+            display:inline;
+        }
+
+    </style>
+    <body>
+    <div class="top"> 
+    <div class="top_logo"> <img class="top_logo" src="noodle_small.png"></div>
+    <div class="top_nav"><a href="index.html">Search</a>  <a href="index_image.html">Image Search</a></div>
+    </div>
+    <br><br>
+    <div class="mainDiv">
+        <form action="https://google.com/search">
+           
+            <ul>
+            <li><div class="test">all these words:</div><input class="qBox" type="text" name="q"></li>
+            <li><span>this exact word or phrase:</span><input class="qBox" type="text" name="q"></li>
+            <li><span>any of these words:</span><input class="qBox" type="text" name="q"></li>
+            <li><span>none of these words:</span><input class="qBox" type="text" name="q"></li>
+            </ul>
+            <input class="qButton" type="submit" value="Noodle Search">
+        </form>
+    </div>
+    </body>
+</html>
